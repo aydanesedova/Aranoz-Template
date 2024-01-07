@@ -1,0 +1,537 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  min-height: 84px;
+  background-color: transparent !important;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed !important;
+}
+nav .aranoz {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .aranoz .aranozList {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 10px;
+}
+nav .aranoz .aranozList li a {
+  font-family: poppins;
+  font-size: 14px;
+  line-height: 12px;
+  color: #000;
+  cursor: pointer;
+}
+nav .aranoz .aranozList li ul {
+  background-color: #FF3368;
+  border: none;
+}
+nav .aranoz .aranozList li ul li {
+  background-color: transparent !important;
+}
+nav .aranoz .aranozList li ul li a {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+nav .aranoz .aranozList li ul li a:hover {
+  background-color: #FF3368;
+}
+nav .aranoz .aranozList .search {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 15px;
+  min-width: 18%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding: 10px;
+}
+nav .aranoz .aranozList .search #inp {
+  background-color: transparent;
+  min-width: 82%;
+  border: none;
+  color: #000;
+}
+nav .aranoz .aranozList .search #inp::placeholder {
+  color: #000;
+}
+nav .aranoz .aranozList .search #btn {
+  background-color: transparent;
+  border: none;
+}
+nav .aranoz .aranozList .search #btn i {
+  color: #000;
+  transition: 0.5s ease;
+}
+nav .searchIcons {
+  min-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+nav .searchIcons .search {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 15px;
+  min-width: 15%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+nav .searchIcons .search #inp {
+  background-color: transparent;
+  min-width: 82%;
+  border: none;
+  color: #000;
+}
+nav .searchIcons .search #inp::placeholder {
+  color: #000;
+}
+nav .searchIcons .search #btn {
+  background-color: transparent;
+  border: none;
+}
+nav .searchIcons .search #btn i {
+  color: #000;
+  transition: 0.5s ease;
+}
+
+#woodCloth {
+  min-height: 820px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECFDFF;
+}
+#woodCloth .woodClothTxt {
+  width: 100%;
+}
+#woodCloth .woodClothTxt h1 {
+  font-size: 66px;
+  font-family: poppins;
+  color: #000;
+  line-height: 72px;
+  font-weight: 700;
+}
+#woodCloth .woodClothTxt p {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #292929;
+  line-height: 27px;
+  font-weight: 300;
+  min-height: 150px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#woodCloth .woodClothTxt button {
+  width: 45%;
+  min-height: 60px;
+  font-family: poppins;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  background-color: #ff3368;
+}
+#woodCloth .sofa {
+  width: 706px;
+  min-height: 353px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199px) {
+  #woodCloth .sofa {
+    display: none;
+  }
+}
+#awesome {
+  min-height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#awesome .awesomeTxt {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#awesome .awesomeTxt h1 {
+  font-size: 36px;
+  font-family: sans-serif;
+  color: #000;
+  line-height: 27px;
+  font-weight: 700;
+}
+#awesome .awesomeTxt span {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #adadad;
+  line-height: 27px;
+  font-weight: 700;
+}
+#awesome #productsAll {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#awesome #productsAll .miniDiv {
+  width: 33%;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#awesome #productsAll .miniDiv img {
+  width: 95%;
+}
+#awesome #productsAll .miniDiv h2 {
+  color: #141517;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: poppins;
+  min-height: 40px;
+  display: flex;
+  align-items: end;
+}
+#awesome #productsAll .miniDiv .wishAdd {
+  display: flex;
+  justify-content: space-between;
+}
+#awesome #productsAll .miniDiv .wishAdd button {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 57px;
+  color: #FF3368;
+  font-weight: 700;
+  border: none;
+  transition: 0.5s ease;
+  width: 35%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#awesome #productsAll .miniDiv .wishAdd .wish {
+  color: #000;
+  font-size: 18px;
+}
+#awesome .loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+#awesome .loadMore #loadMore {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 27px;
+  font-weight: 500;
+  min-width: 180px;
+  min-height: 57px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  border: 1px solid #000000;
+}
+
+@media screen and (max-width: 991px) {
+  #awesome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  #awesome #productsAll {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #awesome #productsAll .miniDiv {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #awesome #productsAll .miniDiv img {
+    width: 60%;
+  }
+  #awesome #productsAll .miniDiv .wishAdd {
+    width: 70%;
+  }
+  #awesome #productsAll .miniDiv .wishAdd button {
+    font-size: 6px;
+  }
+}
+#weekly {
+  width: 100%;
+  min-height: 750px;
+  background-color: #ECFDFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weekly .greenSofa {
+  width: 100%;
+  height: 100%;
+}
+#weekly .greenSofa img {
+  width: 100%;
+}
+#weekly .weeklyTxt {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#weekly .weeklyTxt .weekContainer {
+  width: 70%;
+  height: 100%;
+}
+#weekly .weeklyTxt .weekContainer .calendar {
+  display: flex;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#weekly .weeklyTxt .weekContainer .calendar .calendarTxt span {
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5333333333);
+}
+#weekly .weeklyTxt .weekContainer .calendar .calendarTxt h2 {
+  font-family: poppins;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+#weekly .weeklyTxt .weekContainer .emailAddress {
+  background-color: #fff;
+  min-height: 60px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#weekly .weeklyTxt .weekContainer .emailAddress input {
+  width: 67%;
+  border: none;
+  min-height: 60px;
+  border-radius: 5px;
+}
+#weekly .weeklyTxt .weekContainer .emailAddress input::placeholder {
+  padding-left: 15px;
+}
+#weekly .weeklyTxt .weekContainer .emailAddress button {
+  background-color: #FF3368;
+  border: none;
+  width: 33%;
+  min-height: 60px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 57px;
+  font-weight: 700;
+}
+
+#bestSells {
+  min-height: 784px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#bestSells .bestSellsTxt {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#bestSells .bestSellsTxt h1 {
+  font-size: 36px;
+  font-family: sans-serif;
+  color: #000;
+  line-height: 27px;
+  font-weight: 700;
+}
+#bestSells .bestSellsTxt span {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #adadad;
+  line-height: 27px;
+  font-weight: 700;
+}
+#bestSells .bestWatch img {
+  width: 100%;
+  min-height: 200px;
+}
+#bestSells .bestWatch h4 {
+  font-size: 18px;
+  font-family: poppins;
+  color: #000;
+  line-height: 22px;
+  min-height: 40px;
+  display: flex;
+  align-items: end;
+  font-weight: 700;
+}
+#bestSells .bestWatch h3 {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #000;
+  line-height: 22px;
+}
+
+#subscribe {
+  min-height: 578px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/images/subscribe_area.png);
+}
+#subscribe .subscribeTxt {
+  display: flex;
+  min-height: 578px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#subscribe .subscribeTxt span {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #ff3368;
+  line-height: 17px;
+}
+#subscribe .subscribeTxt h1 {
+  font-size: 48px;
+  font-family: sans-serif;
+  color: #000;
+  line-height: 66px;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#subscribe .subscribeTxt .enterEmailAddress {
+  width: 50%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#subscribe .subscribeTxt .enterEmailAddress input {
+  width: 63%;
+  min-height: 50px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
+}
+#subscribe .subscribeTxt .enterEmailAddress input::placeholder {
+  padding-left: 15px;
+}
+#subscribe .subscribeTxt .enterEmailAddress button {
+  width: 33%;
+  min-height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff3368;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+footer {
+  min-height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyright {
+  min-height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+footer .copyright p {
+  color: #888;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+footer .copyright p span {
+  color: #FF3368;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 437px) {
+  #weekly .weeklyTxt .weekContainer .calendar .calendarTxt h2 {
+    font-size: 20px;
+  }
+  #weekly .weeklyTxt .weekContainer .calendar .calendarTxt span {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 366px) {
+  #weekly .weeklyTxt .weekContainer .emailAddress {
+    display: none;
+  }
+}
+@media screen and (max-width: 888px) {
+  #subscribe .subscribeTxt h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 428px) {
+  #subscribe .subscribeTxt h1 {
+    font-size: 20px;
+  }
+  #subscribe .subscribeTxt .enterEmailAddress button {
+    font-size: 10px;
+  }
+}
